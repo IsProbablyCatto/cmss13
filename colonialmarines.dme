@@ -1979,6 +1979,7 @@ s// DM Environment file for colonialmarines.dme.
 #include "code\modules\mob\living\carbon\xenomorph\mutators\strains\ravager\berserker.dm"
 #include "code\modules\mob\living\carbon\xenomorph\mutators\strains\ravager\hedgehog.dm"
 #include "code\modules\mob\living\carbon\xenomorph\mutators\strains\runner\acid.dm"
+#include "code\modules\mob\living\carbon\xenomorph\mutators\strains\warrior\boxer.dm"
 #include "code\modules\mob\living\silicon\alarm.dm"
 #include "code\modules\mob\living\silicon\death.dm"
 #include "code\modules\mob\living\silicon\login.dm"
