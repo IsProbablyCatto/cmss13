@@ -177,7 +177,7 @@
 
 /datum/behavior_delegate/boxer/New()
 	. = ..()
-	if(SSticker.mode && (SSticker.mode.flags_round_type & MODE_XVX)) // this is pain to do, but how else? hopefully we can replace clarity with something better in the future
+	if(SSticker.mode && (SSticker.mode.flags_round_type & MODE_XVX))
 		clear_head = 0
 		max_clear_head = 0
 
@@ -244,7 +244,7 @@
 		bound_xeno.client.images -= big_ko_icon
 	big_ko_icon = null
 
-// a lot of repeats but it's because we are calling different parent procs
+
 /mob/living/carbon/Xenomorph/Warrior/Daze(amount)
 	var/datum/behavior_delegate/boxer/behavior = behavior_delegate
 	if(mutation_type != WARRIOR_BOXER || !istype(behavior) || behavior.clear_head <= 0)
@@ -329,7 +329,7 @@
 	if(behavior.clear_head<=0)
 		behavior.clear_head = 0
 
-/mob/living/carbon/Xenomorph/Warrior/SetStunned(amount) //if you REALLY need to set stun to a set amount without the whole "can't go below current stunned"
+/mob/living/carbon/Xenomorph/Warrior/SetStunned(amount)
 	var/datum/behavior_delegate/boxer/behavior = behavior_delegate
 	if(mutation_type != WARRIOR_BOXER || !istype(behavior) || behavior.clear_head <= 0)
 		..(amount)
